@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request a Website | QuickStacks</title>
+  <link rel="stylesheet" href="Signup.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Request Your Website</h1>
+      <p class="subtitle">Tell us what you need. We’ll take care of the rest.</p>
+    </div>
+  </header>
+
+  <section class="signup-form">
+    <div class="container">
+      <form id="quoteForm">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="package">Select Your Package</label>
+        <select id="package" name="package" required>
+          <option value="">-- Choose a Package --</option>
+          <option value="basic">Basic Static Website</option>
+          <option value="dynamic">Dynamic Website + Forms</option>
+          <option value="full">Full Web App with Firebase Auth</option>
+        </select>
+
+        <label for="budget">Expected Budget (CAD)</label>
+        <input type="number" id="budget" name="budget" placeholder="Example: 1500" required />
+
+        <label for="description">Describe What You Need</label>
+        <textarea id="description" name="description" rows="6" placeholder="Tell us your ideas, features, pages, etc." required></textarea>
+
+        <button id = "submit" type="submit">Submit Request</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 QuickStacks Software & Web Development</p>
+      <p><a href="mailto:charlie@quickstacks.dev">charlie@quickstacks.dev</a></p>
+    </div>
+  </footer>
+
+  <script type = "module" src="Signup.js"></script>
+</body>
+</html>
