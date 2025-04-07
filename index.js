@@ -1,3 +1,3 @@
-document.getElementById("contactBtn").addEventListener("click", function () {
-  window.location.href = "mailto:alex@example.com";
+document.getElementById("contactBtn").addEventListener("click", () => {
+  window.location.href = "mailto:charlie@quickstacks.dev";
 });
